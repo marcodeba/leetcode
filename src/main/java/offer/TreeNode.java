@@ -1,4 +1,4 @@
-package medium;
+package offer;
 
 public class TreeNode {
     int value;

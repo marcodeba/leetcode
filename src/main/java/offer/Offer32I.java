@@ -1,4 +1,4 @@
-package medium;
+package offer;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

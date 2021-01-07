@@ -1,4 +1,4 @@
-package medium;
+package offer;
 
 import java.io.IOException;
 import java.util.ArrayList;
