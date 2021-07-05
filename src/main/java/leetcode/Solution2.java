@@ -2,17 +2,15 @@ package leetcode;
 
 public class Solution2 {
 
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {}
-
-        ListNode(int val) {
-            this.val = val;
+    public static void main(String[] args) {
+        Solution2 solution2 = new Solution2();
+        ListNode l1 = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9)))))));
+        ListNode l2 = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9))));
+        ListNode result = solution2.addTwoNumbers(l1, l2);
+        while (result != null) {
+            System.out.print(result.val);
+            result = result.next;
         }
-
-        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
     }
 
     private ListNode addTwoNumbers(ListNode l1, ListNode l2) {
@@ -35,14 +33,20 @@ public class Solution2 {
         return head;
     }
 
-    public static void main(String[] args) {
-        Solution2 solution2 = new Solution2();
-        ListNode l1 = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9)))))));
-        ListNode l2 = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9))));
-        ListNode result = solution2.addTwoNumbers(l1, l2);
-        while (result != null) {
-            System.out.print(result.val);
-            result = result.next;
+    public static class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode() {
+        }
+
+        ListNode(int val) {
+            this.val = val;
+        }
+
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
         }
     }
 }
