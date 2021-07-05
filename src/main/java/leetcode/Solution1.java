@@ -5,8 +5,8 @@ import java.util.Map;
 
 public class Solution1 {
     public static void main(String[] args) {
-        Solution1 solution1 = new Solution1();
-        int[] ints = solution1.twoSum(new int[]{2, 7, 11, 1}, 9);
+        Solution1 solution = new Solution1();
+        int[] ints = solution.twoSum(new int[]{2, 7, 11, 1}, 9);
         for (int i : ints) {
             System.out.println(i);
         }

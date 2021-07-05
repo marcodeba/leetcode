@@ -3,10 +3,10 @@ package leetcode;
 public class Solution2 {
 
     public static void main(String[] args) {
-        Solution2 solution2 = new Solution2();
+        Solution2 solution = new Solution2();
         ListNode l1 = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9)))))));
         ListNode l2 = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9))));
-        ListNode result = solution2.addTwoNumbers(l1, l2);
+        ListNode result = solution.addTwoNumbers(l1, l2);
         while (result != null) {
             System.out.print(result.val);
             result = result.next;
