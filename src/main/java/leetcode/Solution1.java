@@ -1,15 +1,14 @@
 package leetcode;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Solution1 {
     public static void main(String[] args) {
         Solution1 solution = new Solution1();
-        int[] ints = solution.twoSum(new int[]{2, 7, 11, 1}, 9);
-        for (int i : ints) {
-            System.out.println(i);
-        }
+        System.out.println(Arrays.toString(solution.twoSum(new int[]{2, 7, 11, 1},
+                9)));
     }
 
     private int[] twoSum(int[] nums, int target) {
